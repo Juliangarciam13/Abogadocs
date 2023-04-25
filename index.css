@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#BannerWCU {
+    background-image: url('./Media/whyChooseUs.png');
+    background-size: cover;
+    background-position: bottom center;
+    height: 70vh;
+    width: 100%;
+    box-shadow: 0 0 10px 0;
+}
