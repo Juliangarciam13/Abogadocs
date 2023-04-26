@@ -2,24 +2,73 @@ body {
     margin: 0;
     padding: 0;
 }
+
+header {
+    width: 100%;
+    height: 20vh;
+    margin: 0;
+    padding: 0;
+}  
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #039BE5;
+}
+
+li img:hover {
+    transform: translateX(15px);
+}
+
+li img {
+    width: 70%;
+    height: 70%;
+    transition: transform 0.3s ease;
+}
+
 #BannerInitial {
     background-image: url('./Media/BannerInitial.png');
     background-size: cover;
     background-position: bottom center;
-    height: 70vh;
+    height: 50vh;
     width: 100%;
 }
+
 #BannerStatistics {
     background-image: url('./Media/BannerStatistics.png');
     background-size: cover;
     background-position: bottom center;
-    height: 70vh;
+    height: 60vh;
     width: 100%;
 }
+
 #BannerWCU {
     background-image: url('./Media/whyChooseUs.png');
     background-size: cover;
     background-position: bottom center;
-    height: 70vh;
+    height: 50vh;
     width: 100%;
 }
+
+.Menu {
+    margin: 0;
+    height: 10vh;
+    font-size: 150%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    list-style: none; 
+}
+
+.Menu li {
+    width: 25%;
+    text-align:center;
+}
+
+
