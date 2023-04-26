@@ -97,6 +97,51 @@ nav a {
     height: 45px;
     list-style: none;
 }
+#newsletter {
+    background-color: #004aad;
+    padding: 20px;
+    text-align: center;
+}
+
+#newsletter h3 {
+    font-size: 150%;
+    margin-bottom: 10px;
+    color: #fefeff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#newsletter form {
+    display: inline-block;
+}
+
+#newsletter label {
+    display: block;
+    font-size: 100%;
+    margin-bottom: 10%;
+}
+
+#newsletter input[type="email"] {
+    font-size: 100%;
+    padding: 5px;
+    width: 250px;
+    margin-bottom: 10%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#newsletter input[type="submit"] {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 .footerSocialLink:hover {
     opacity: 0.3;
