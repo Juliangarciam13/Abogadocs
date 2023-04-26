@@ -28,6 +28,33 @@ li img {
     height: 70%;
     transition: transform 0.3s ease;
 }
+footer {
+    background-color: #004aad;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav {
+    display: inline-block
+}
+
+nav a {
+    margin-right: 20%;
+    text-decoration: none;
+    color: #ded7d7;
+    font-weight: bold;
+}
 
 #BannerInitial {
     background-image: url('./Media/BannerInitial.png');
@@ -51,6 +78,29 @@ li img {
     background-position: bottom center;
     height: 50vh;
     width: 100%;
+}
+
+#FooterIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+#FooterIcons li {
+    margin-left: 10px;
+    list-style: none;
+    display: inline-flex
+}
+
+#FooterIcons img {
+    width: 45px;
+    height: 45px;
+    list-style: none;
+}
+
+.footerSocialLink:hover {
+    opacity: 0.3;
+    
 }
 
 .Menu {
