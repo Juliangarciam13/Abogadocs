@@ -45,14 +45,18 @@ footer nav {
     align-items: center;
 }
 
+footer p {
+    color: white;
+}
+
 nav {
     display: inline-block
 }
 
-nav a {
+footer nav a {
     margin-right: 20%;
     text-decoration: none;
-    color: #ded7d7;
+    color: white;
     font-weight: bold;
 }
 
@@ -120,5 +124,32 @@ nav a {
     width: 25%;
     text-align:center;
 }
+
+.customers {
+    display: flex;
+    flex-direction: row;
+    align-items:center;  
+    text-align:center;
+    justify-content: space-around;
+}
+
+.customer {
+    width: 30%;
+    height: 30%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+}
+
+.customer img{
+    width: 80%;
+    height: 80%;
+}
+
+h1 {
+    font-size: 300%;
+    margin-left: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 
 
