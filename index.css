@@ -69,24 +69,24 @@ footer nav a {
 
 #BannerInitial {
     background-image: url('./Media/BannerInitial.png');
-    background-size: cover;
-    background-position: bottom center;
+    background-size: 100% 100%;
+    background-position: center center;
     height: 50vh;
     width: 100%;
 }
 
 #BannerStatistics {
     background-image: url('./Media/BannerStatistics.png');
-    background-size: cover;
-    background-position: bottom center;
+    background-size: 100% 100%;
+    background-position: center center;
     height: 60vh;
     width: 100%;
 }
 
 #BannerWCU {
     background-image: url('./Media/whyChooseUs.png');
-    background-size: cover;
-    background-position: bottom center;
+    background-size: 100% 100%;
+    background-position: center center;
     height: 50vh;
     width: 100%;
 }
