@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 20vh;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #039BE5;
+}
+
+li img:hover {
+    transform: translateX(15px);
+}
+
+li img {
+    width: 70%;
+    height: 70%;
+    transition: transform 0.3s ease;
+}
+
+h1 {
+    font-size: 300%;
+    margin-left: 45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer {
+    background-color: #004aad;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+}
+
+nav {
+    display: inline-block
+}
+
+footer nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#BannerInitial {
+    background-image: url('./Media/BannerInitial.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 50vh;
+    width: 100%;
+}
+
+#BannerStatistics {
+    background-image: url('./Media/BannerStatistics.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 60vh;
+    width: 100%;
+}
+
+#BannerWCU {
+    background-image: url('./Media/whyChooseUs.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 50vh;
+    width: 100%;
+}
+
+#FooterIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+#FooterIcons li {
+    margin-left: 10px;
+    list-style: none;
+    display: inline-flex
+}
+
+#FooterIcons img {
+    width: 45px;
+    height: 45px;
+    list-style: none;
+}
+
+#newsletter {
+    background-color: #004aad;
+    padding: 20px;
+    text-align: center;
+}
+
+#newsletter h3 {
+    font-size: 150%;
+    margin-bottom: 10px;
+    color: #fefeff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#newsletter form {
+    display: inline-block;
+}
+
+#newsletter label {
+    display: block;
+    font-size: 100%;
+    margin-bottom: 10%;
+}
+
+#newsletter input[type="email"] {
+    font-size: 100%;
+    padding: 5px;
+    width: 250px;
+    margin-bottom: 10%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#newsletter input[type="submit"] {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footerSocialLink:hover {
+    opacity: 0.3;
+
+}
+
+.Menu {
+    margin: 0;
+    height: 10vh;
+    font-size: 150%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+.Menu li {
+    width: 25%;
+    text-align: center;
+}
+
+.customers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.customer {
+    width: 30%;
+    height: 30%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+}
+
+.customer img {
+    width: 80%;
+    height: 80%;
+}
