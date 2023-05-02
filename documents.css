@@ -70,6 +70,7 @@ h1 {
 
 h2 {
     color: white;
+    font-size: 150%;
 }
 
 
@@ -111,6 +112,34 @@ h2 {
     list-style: none;
 }
 
+#IconsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+#history,
+#law,
+#politic {
+    padding: 2% 8%;
+    background-color: #00356A;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#history:hover,
+#law:hover,
+#politic:hover {
+    background-color: #039BE5;
+}
+
 .button {
     display: flex;
     justify-content: center;
@@ -120,15 +149,6 @@ h2 {
 .IconDoc img {
     width: 80%;
     height: 80%;
-}
-
-#IconsContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    text-align: center;
-    justify-content: space-around;
-    margin-bottom: 5%;
 }
 
 .IconDoc {
@@ -192,19 +212,4 @@ h2 {
 
 .info-box--hidden {
     display: none;
-}
-
-#history, #law, #politic {
-    padding: 2% 8%;
-    background-color: #00356A;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 10px;
-    border-radius: 5px;
-}
-
-#history:hover, #law:hover, #politic:hover {
-    background-color: #039BE5;
 }

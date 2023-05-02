@@ -8,7 +8,7 @@ header {
     height: 20vh;
     margin: 0;
     padding: 0;
-}  
+}
 
 ul li a {
     text-decoration: none;
@@ -97,6 +97,7 @@ footer nav a {
     align-items: center;
     list-style: none;
 }
+
 #FooterIcons li {
     margin-left: 10px;
     list-style: none;
@@ -108,6 +109,7 @@ footer nav a {
     height: 45px;
     list-style: none;
 }
+
 #newsletter {
     background-color: #004aad;
     padding: 20px;
@@ -156,32 +158,32 @@ footer nav a {
 
 .footerSocialLink:hover {
     opacity: 0.3;
-    
+
 }
 
 .Menu {
     margin: 0;
     height: 10vh;
     font-size: 150%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
     color: black;
     display: flex;
     flex-direction: row;
-    align-items: center;  
-    list-style: none; 
+    align-items: center;
+    list-style: none;
 }
 
 .Menu li {
     width: 25%;
-    text-align:center;
+    text-align: center;
 }
 
 .customers {
     display: flex;
     flex-direction: row;
-    align-items:center;  
-    text-align:center;
+    align-items: center;
+    text-align: center;
     justify-content: space-around;
 }
 
@@ -192,12 +194,7 @@ footer nav a {
     font-size: 150%;
 }
 
-.customer img{
+.customer img {
     width: 80%;
     height: 80%;
 }
-
-
-
-
-
