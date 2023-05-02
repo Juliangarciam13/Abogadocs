@@ -8,7 +8,7 @@ header {
     height: 20vh;
     margin: 0;
     padding: 0;
-}  
+}
 
 ul li a {
     text-decoration: none;
@@ -31,11 +31,13 @@ li img {
 
 footer {
     background-color: #004aad;
-    padding: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -51,7 +53,7 @@ nav {
 }
 
 footer nav a {
-    margin-right: 20%;
+    margin-right: 10px;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -68,6 +70,7 @@ h1 {
 
 h2 {
     color: white;
+    font-size: 150%;
 }
 
 
@@ -96,6 +99,7 @@ h2 {
     align-items: center;
     list-style: none;
 }
+
 #FooterIcons li {
     margin-left: 10px;
     list-style: none;
@@ -108,11 +112,6 @@ h2 {
     list-style: none;
 }
 
-.IconDoc img {
-    width: 80%;
-    height: 80%;
-}
-
 #IconsContainer {
     display: flex;
     flex-direction: row;
@@ -120,6 +119,36 @@ h2 {
     text-align: center;
     justify-content: space-around;
     margin-bottom: 5%;
+}
+
+#history,
+#law,
+#politic {
+    padding: 2% 8%;
+    background-color: #00356A;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#history:hover,
+#law:hover,
+#politic:hover {
+    background-color: #039BE5;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.IconDoc img {
+    width: 80%;
+    height: 80%;
 }
 
 .IconDoc {
@@ -134,40 +163,26 @@ h2 {
 
 .footerSocialLink:hover {
     opacity: 0.3;
-    
+
 }
 
 .Menu {
     margin: 0;
     height: 10vh;
     font-size: 150%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
     color: black;
     display: flex;
     flex-direction: row;
-    align-items: center;  
-    list-style: none; 
+    align-items: center;
+    list-style: none;
 }
 
 .Menu li {
     width: 25%;
-    text-align:center;
+    text-align: center;
 }
-
-.Container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    flex-grow: 1;
-}
-
 
 .card {
     width: 200px;
@@ -184,6 +199,7 @@ h2 {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
     transform: translateY(10px);
 }
+
 .card img {
     width: 100%;
     height: 100%;
@@ -197,7 +213,3 @@ h2 {
 .info-box--hidden {
     display: none;
 }
-
-
-
-
