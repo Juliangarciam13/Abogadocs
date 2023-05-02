@@ -1,8 +1,17 @@
-async function displaybooks() {
+const historyButton = document.getElementById('history');
+const lawButton = document.getElementById('law');
+const politicsButton = document.getElementById('politic');
+
+const cardContainer = document.createElement('div');
+document.body.appendChild(cardContainer);
+
+async function displaybooks(category) {
   try {
-    const response = await fetch('http://openlibrary.org/search.json?q=&subject=law');
+    const response = await fetch(`http://openlibrary.org/search.json?q=&subject=${category}`);
     const data = await response.json();
     const books = data.docs.filter(book => book.cover_i);
+
+    cardContainer.innerHTML = '';
 
     books.forEach(book => {
       const card = document.createElement('div');
@@ -27,28 +36,46 @@ async function displaybooks() {
         infoBox.classList.add('hidden');
       });
       card.appendChild(cover_img);
+      card.appendChild(infoBox);
 
-      document.body.appendChild(card);
+      cardContainer.appendChild(card);
     });
   } catch (error) {
     console.log(error);
   }
 }
 
-displaybooks();
-
-function downloadPdf() {
-  let link = document.createElement('a');
-  link.href = './DownloadPdf/mobileAppPresentation.pdf';
-  link.download = 'mobileAppPresentation.pdf';
-  link.style.visibility = 'hidden';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
-}
-
-let pdfDownloadLink = document.getElementById('pdf-download-link');
-pdfDownloadLink.addEventListener('click', function (event) {
-  event.preventDefault();
-  downloadPdf();
+historyButton.addEventListener('click', () => {
+  displaybooks('history');
 });
+
+lawButton.addEventListener('click', () => {
+  displaybooks('law');
+});
+
+politicsButton.addEventListener('click', () => {
+  displaybooks('politic');
+});
+
+document.addEventListener("DOMContentLoaded", async function (event) {
+  await displaybooks();
+
+
+  function downloadPdf() {
+    let link = document.createElement('a');
+    link.href = './DownloadPdf/mobileAppPresentation.pdf';
+    link.download = 'mobileAppPresentation.pdf';
+    link.style.visibility = 'hidden';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  let pdfDownloadLink = document.getElementById('pdf-download-link');
+  pdfDownloadLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    downloadPdf();
+  });
+});
+
+
