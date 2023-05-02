@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-    <title>Legal Documents</title>
-    <link rel="stylesheet" href="./legalDocuments.css">
-    <script type="module" src="./downloadPdf.js" defer></script>
-    <script type="module" src="./downloadWord.js" defer></script>
+    <title>Books</title>
+    <link rel="stylesheet" href="./books.css">
+    <script type="module" src="./abogadocs.js" defer></script>
 </head>
 
 <body>
@@ -17,7 +16,7 @@
                                 alt="abogadocs" onclick="downloadPdf()"></a></li>
                     <li><a href="./index.html" target="_blank">HOME</a></li>
                     <li><a href="./books.html" target="_blank">BOOKS</a></li>
-                    <li><a href="./legalDocuments.html" target="_blank">DOCUMENTS</a></li>
+                    <li><a href="./documents.html" target="_blank">DOCUMENTS</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,43 +28,23 @@
     <div id="IconsContainer">
         <div class="IconDoc">
             <img src="./Media/IconDoc.png">
-            <h1>Choose a document.</h1>
+            <h2>Choose a book.</h2>
         </div>
         <div class="IconDoc">
             <img src="./Media/IconDownload.png">
-            <h1>Download the document.</h1>
+            <h2>Download the book.</h2>
         </div>
         <div class="IconDoc">
             <img src="./Media/IconPrint.png">
-            <h1>Print your document.</h1>
+            <h2>Print your book.</h2>
         </div>
     </div>
-    <h1 id="titleDoc">DOCUMENTS</h1>
-    <div class="documents">
-        <div class="card">
-            <img id="ampleSufficientPower" src="./Media/ampleSufficientPower.png" alt="customer">
-            <h2>Ample and Sufficient Power</h2>
-        </div>
-        <div class="card">
-            <img id="assignmentContract" src="./Media/assignmentContract.png" alt="customer">
-            <h2>Assignment Contract</h2>
-        </div>
-        <div class="card">
-            <img id="confidentialityAgreement" src="./Media/confidentialityAgreement.png" alt="customer">
-            <h2>Confidentiality Agreement</h2>
-        </div>
-        <div class="card">
-            <img id="powerContract" src="./Media/powerContract.png" alt="customer">
-            <h2>Power and Contract</h2>
-        </div>
-        <div class="card">
-            <img id="succession" src="./Media/succession.png" alt="customer">
-            <h2>Succession</h2>
-        </div>
-        <div class="card">
-            <img id="urbanLeaseContract" src="./Media/urbanLeaseContract.png" alt="customer">
-            <h2>Urban Lease Contract</h2>
-        </div>
+    <div class="button">
+        <button id="history">HISTORY</button>
+        <button id="law">LAW</button>
+        <button id="politic">POLITIC</button>
+    </div>
+    <div id="container">
     </div>
 
 </body>
