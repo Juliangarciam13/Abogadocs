@@ -26,6 +26,9 @@ async function displaybooks() {
       cover_img.addEventListener('mouseout', () => {
         infoBox.classList.add('hidden');
       });
+      cover_img.addEventListener('click', () => {
+        window.open(`https://openlibrary.org${book.key}`);
+      });
       card.appendChild(cover_img);
 
       document.body.appendChild(card);
