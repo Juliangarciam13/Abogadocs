@@ -86,7 +86,7 @@ h2 {
 
 #BannerDocuments {
     margin-top: -10vh;
-    background-image: url(./Media/BannerBooks.png);
+    background-image: url(../Media/BannerBooks.png);
     background-size: 100% 100%;
     background-position: center center;
     height: 60vh;
